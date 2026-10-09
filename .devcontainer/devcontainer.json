@@ -1,0 +1,9 @@
+{
+  "name": "Kali Linux Codespace",
+  "image": "kalilinux/kali-rolling:latest",
+  "features": {
+    "ghcr.io/devcontainers/features/desktop-lite:1": {}
+  },
+  "forwardPorts": [6080],
+  "postCreateCommand": "sudo apt update && sudo apt install -y kali-linux-default"
+}
